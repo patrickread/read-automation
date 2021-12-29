@@ -1,0 +1,11 @@
+coverage==5.3.1
+flake8==3.8.4
+Flask==1.1.2
+requests==2.26.0
+py==1.10.0
+pycodestyle==2.6.0
+pyflakes==2.2.0
+pyparsing==2.4.7
+pytest==6.2.1
+pytest-cov==2.10.1
+Werkzeug==1.0.1
