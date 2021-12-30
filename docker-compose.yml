@@ -5,6 +5,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+          - LOG_LEVEL=DEBUG
+          - TPLINK_USERNAME=user@email.com
+          - TPLINK_PASSWORD=pass123
+          - FUNHOUSE_TO_DEVICE_ALIAS=""
+          - FUNHOUSE_TO_PASSWORD=""
     ports:
       - "5000:5000"
     volumes:

@@ -1,8 +1,8 @@
 import json
 from . import temperature_blueprint
-from config import Configuration
+from read_automation.config import Configuration
 from flask import request
-from kasa import authenticate, get_device_by_alias, get_devices_list, set_device_status
+from read_automation.utils.kasa import authenticate, get_device_by_alias, get_devices_list, set_device_status
 
 
 @temperature_blueprint.route("/temperature", methods=["POST"])
