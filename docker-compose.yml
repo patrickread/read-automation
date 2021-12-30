@@ -9,8 +9,8 @@ services:
           - LOG_LEVEL=DEBUG
           - TPLINK_USERNAME=user@email.com
           - TPLINK_PASSWORD=pass123
-          - FUNHOUSE_TO_DEVICE_ALIAS=""
-          - FUNHOUSE_TO_PASSWORD=""
+          - 'FUNHOUSE_TO_DEVICE_ALIAS={"foo": "device_alias"}'
+          - 'FUNHOUSE_TO_PASSWORD={"foo": "bar"}'
     ports:
       - "5000:5000"
     volumes:
