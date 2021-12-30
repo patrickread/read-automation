@@ -1,3 +1,4 @@
+import logging
 from flask import Flask
 
 
@@ -9,6 +10,8 @@ def create_app():
     # Create the Flask application
     app = Flask(__name__)
     app.url_map.strict_slashes = False
+    logging.basicConfig(filename="local.log", level=logging.DEBUG)
+
 
     register_blueprints(app)
     register_error_pages(app)
