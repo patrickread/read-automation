@@ -47,6 +47,13 @@ def post_temp():
             )
         }))
         set_device_status(token=token, device=device, turn_on=new_state)
+    else:
+        print(json.dumps({
+            "severity": "INFO",
+            "message": (
+                f"No-oping for temperature: {temperature}"
+            )
+        }))
 
     return {
         "new_state": new_state
